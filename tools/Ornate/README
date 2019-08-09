@@ -1,0 +1,21 @@
+Ornate is a method for protein quality assessment.
+
+To install Ornate:
+    -Install Python 3.5 or later
+    -Install Tensorflow (preferably with GPU support) from https://www.tensorflow.org/install
+    -Uncomment the line corresponding to your operating system in the "config" file
+
+To run Ornate:
+    You can score one structure :
+    python score.py -s path/to/my_structure.pdb
+    or all structures in a directory : 
+    python score.py -d path/to/my_directory
+
+To interpret output:
+    The output in generally composed of multiple lines, each line correspond to one residue.
+    A typical line output is :
+    RES  107 L 0.4041
+    which means that the residue 107 from the input is a leucine and its score is 0.4041.
+    A high score should correspond to a well folded residue.
+
+Feel free to modify the script score.py to match your needs

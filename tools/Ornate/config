@@ -1,0 +1,12 @@
+# Config file for Ornate scoring function
+
+#Please uncomment the line corresponding to your system
+MAP_GENERATOR_PATH = bin/Linux/maps_generator
+#MAP_GENERATOR_PATH = bin/Windows/maps_generator.exe
+#MAP_GENERATOR_PATH = bin/MacOs/maps_generator
+
+# Place to store temporary files
+TEMP_PATH = /tmp/
+
+# Place where the pre-trained model is located
+MODEL_PATH = model/model.ckpt
